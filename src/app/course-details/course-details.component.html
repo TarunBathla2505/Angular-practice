@@ -1,0 +1,12 @@
+<p>course-details!</p>
+<table>
+  <th *ngFor="let heading of displayedColumns">
+    {{ heading }}
+  </th>
+  <tr *ngFor="let cource of cources">
+    <td>{{ cource.code }}</td>
+    <td>{{ cource.name }}</td>
+    <td>{{ cource.fee }}</td>
+    <td>{{ cource.duration }}</td>
+  </tr>
+</table>

@@ -1,0 +1,7 @@
+<form #userForm="ngForm" (submit)="submitData(userForm.value)">
+  <label for="uname">User name</label>
+  <input type="text" id="uname" name="uname" [(ngModel)]="uname" /><br /><br />
+  <label for="age">User age</label>
+  <input type="number" id="age" name="age" [(ngModel)]="age" /><br /><br />
+  <input type="submit" value="submit" />
+</form>
